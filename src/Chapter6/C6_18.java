@@ -26,6 +26,14 @@ public class C6_18
             System.out.println("Invalid password");
         }
     }
+    
+    /**
+     * 
+     * checks if password meets parameters
+     * 
+     * @param password
+     * @return boolean based on if password is correct
+     */
     public static boolean checkPassword(String password) {
         int counter = 0;
         // Must have at least 8 characters

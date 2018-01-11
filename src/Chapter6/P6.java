@@ -74,6 +74,13 @@ public class P6
         }
     }
     
+    /**
+    * Method
+    * 
+    * @param exchangeRate
+    * @param givenUSD
+    * @return updated price based on exchange rate
+    */
     public static double exchangeRate(double givenUSD, double exchangeRate)
     {
         double returnPrice;
