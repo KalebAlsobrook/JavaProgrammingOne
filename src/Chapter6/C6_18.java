@@ -31,7 +31,7 @@ public class C6_18
      * 
      * checks if password meets parameters
      * 
-     * @param password
+     * @param password given input from user
      * @return boolean based on if password is correct
      */
     public static boolean checkPassword(String password) {

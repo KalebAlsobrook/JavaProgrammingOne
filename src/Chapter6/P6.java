@@ -75,10 +75,10 @@ public class P6
     }
     
     /**
-    * Method
+    * Takes the given money and converts with exchange rate
     * 
-    * @param exchangeRate
-    * @param givenUSD
+    * @param exchangeRate given by user, how many usd in the new dollar
+    * @param givenUSD the number of dollars to be converted
     * @return updated price based on exchange rate
     */
     public static double exchangeRate(double givenUSD, double exchangeRate)

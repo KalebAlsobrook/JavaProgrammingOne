@@ -3,7 +3,7 @@ package Chapter5;
 import java.util.*;
 
 /**
- * Opperates a game or Rock Paper Scissors
+ * Operates a game or Rock Paper Scissors
  *
  * @author kaleb alsobrook
  */
