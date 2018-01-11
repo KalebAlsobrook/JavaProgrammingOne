@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Checks given password
  *
- * @author kaleb alsobrook
+ * @author Logan Hutchens
  */
 public class C6_18 
 {
