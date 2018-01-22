@@ -7,15 +7,14 @@ import java.util.*;
  *
  * @author Kaleb Alsobrook
  */
-public class C3_26 
-{
+public class C3_26 {
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         //Creating scanner and variables
         Scanner input = new Scanner(System.in);
         boolean both;
@@ -32,9 +31,9 @@ public class C3_26
         oneButNotBoth = ((number % 5.0 == 0) ^ (number % 6 == 0));
 
         //Replying answer
-        System.out.println("Is "+ number + " divisible by 5 and 6: " + both);
-        System.out.println("Is "+ number + " divisible by 5 OR 6: "+ one);
-        System.out.println("Is "+ number + " divisible by 5 OR 6, but not both: "+oneButNotBoth);
+        System.out.println("Is " + number + " divisible by 5 and 6: " + both);
+        System.out.println("Is " + number + " divisible by 5 OR 6: " + one);
+        System.out.println("Is " + number + " divisible by 5 OR 6, but not both: " + oneButNotBoth);
     }
 
 }
