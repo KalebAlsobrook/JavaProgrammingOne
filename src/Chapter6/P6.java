@@ -7,15 +7,14 @@ import java.util.*;
  *
  * @author kaleb alsobrook
  */
-public class P6 
-{
+public class P6 {
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double exchangeYen, exchangePound, exchangeEuro;
         boolean keepGoing = true;
@@ -23,76 +22,67 @@ public class P6
         double howManySpent;
         double finalPrice;
         String keepGoingString;
-        
+
         System.out.print("How many Euros will 1USD buy: ");
         exchangeEuro = scan.nextDouble();
         System.out.print("How many Pounds will 1USD buy: ");
         exchangePound = scan.nextDouble();
         System.out.print("How many Yen will 1USD buy: ");
         exchangeYen = scan.nextDouble();
-        
-        while (keepGoing == true)
-        {
+
+        while (keepGoing == true) {
             System.out.print("currentcy exchange: Euro(E), Pound (P) or Yen(Y). ");
             currentExchange = scan.next();
             System.out.print("Insert how much USD using to buy: ");
             howManySpent = scan.nextDouble();
-            
-            if (null == currentExchange)
-            {
+
+            if (null == currentExchange) {
                 continue;
+            } else {
+                switch (currentExchange) {
+                    case "Y":
+                        finalPrice = exchangeRate(howManySpent, exchangeYen);
+                        break;
+                    case "E":
+                        finalPrice = exchangeRate(howManySpent, exchangeEuro);
+                        break;
+                    case "P":
+                        finalPrice = exchangeRate(howManySpent, exchangePound);
+                        break;
+                    default:
+                        continue;
+                }
             }
-            else switch (currentExchange) {
-                case "Y":
-                    finalPrice = exchangeRate(howManySpent, exchangeYen);
-                    break;
-                case "E":
-                    finalPrice = exchangeRate(howManySpent, exchangeEuro);
-                    break;
-                case "P":
-                    finalPrice = exchangeRate(howManySpent, exchangePound);
-                    break;
-                default:
-                    continue;
-            }
-            
+
             System.out.printf("%.2f USD when converted is %.2f", howManySpent, finalPrice);
-            while (1 == 1)
-            {
+            while (1 == 1) {
                 System.out.print("\nContinue? (yes) or (no)? ");
                 keepGoingString = scan.next();
-                if ("yes".equals(keepGoingString))
-                {
+                if ("yes".equals(keepGoingString)) {
                     break;
-                }
-                else if ("no".equals(keepGoingString))
-                {
+                } else if ("no".equals(keepGoingString)) {
                     keepGoing = false;
                     break;
                 }
             }
         }
     }
-    
+
     /**
-    * Takes the given money and converts with exchange rate
-    * 
-    * @param exchangeRate given by user, how many usd in the new dollar
-    * @param givenUSD the number of dollars to be converted
-    * @return updated price based on exchange rate
-    */
-    public static double exchangeRate(double givenUSD, double exchangeRate)
-    {
+     * Takes the given money and converts with exchange rate
+     *
+     * @param exchangeRate given by user, how many usd in the new dollar
+     * @param givenUSD the number of dollars to be converted
+     * @return updated price based on exchange rate
+     */
+    public static double exchangeRate(double givenUSD, double exchangeRate) {
         double returnPrice;
-        if (givenUSD > 100.00)
-        {
+        if (givenUSD > 100.00) {
             givenUSD = givenUSD - (givenUSD * 0.05);
-        }
-        else
-        {
+        } else {
             givenUSD = givenUSD - (givenUSD * 0.1);
         }
-        
+
         returnPrice = givenUSD * exchangeRate;
         return returnPrice;
     }

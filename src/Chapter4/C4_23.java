@@ -7,8 +7,8 @@ import java.util.*;
  *
  * @author Kaleb Alsobrook
  */
-public class C4_23 
-{
+public class C4_23 {
+
     static String name;
     static int hoursWorked;
     static double payRate;
@@ -16,22 +16,21 @@ public class C4_23
     static double federalHoldUsed;
     static double stateHold;
     static double stateHoldUsed;
-    
+
     static double grossPay;
     static double federalCost;
     static double stateCost;
     static double totalCost;
     static double netPay;
-    
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+
         System.out.print("Insert employee's name: ");
         name = scan.next();
         System.out.print("Insert hours worked per week: ");
@@ -42,24 +41,22 @@ public class C4_23
         federalHoldUsed = scan.nextDouble();
         System.out.print("Insert state witholding rate: ");
         stateHoldUsed = scan.nextDouble();
-        
+
         C4_23.DoMath();
     }
-    
-    public static void DoMath()
-    {
+
+    public static void DoMath() {
         grossPay = (payRate * hoursWorked);
-        federalHold =(federalHoldUsed * 100);
-        stateHold =(stateHoldUsed * 100);
+        federalHold = (federalHoldUsed * 100);
+        stateHold = (stateHoldUsed * 100);
         federalCost = (grossPay * federalHoldUsed);
         stateCost = (grossPay * stateHoldUsed);
         totalCost = (stateCost + federalCost);
         netPay = (grossPay - totalCost);
         C4_23.CreateApplication();
     }
-    
-    public static void CreateApplication()
-    {
+
+    public static void CreateApplication() {
         System.out.println();
         System.out.println();
         System.out.printf("Employee's name: %s\n", name);

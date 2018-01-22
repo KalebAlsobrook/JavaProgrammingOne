@@ -7,33 +7,30 @@ import java.util.*;
  *
  * @author Kaleb Alsobrook
  */
-public class C4_18 
-{
+public class C4_18 {
+
     static char majorLetter;
     static char majorNumber;
     static String fullMajor;
-    
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String fullMajorCode;
-        
+
         System.out.print("Insert Two didget Code: ");
         fullMajorCode = scan.next();
-        
+
         fullMajorCode = fullMajorCode.toUpperCase();
-        
+
         majorLetter = fullMajorCode.charAt(0);
         majorNumber = fullMajorCode.charAt(1);
-       
-        
-        switch (majorLetter)
-        {
+
+        switch (majorLetter) {
             case 'M':
                 fullMajor = "Mathematics ";
                 C4_18.Years();
@@ -52,11 +49,9 @@ public class C4_18
                 break;
         }
     }
-    
-    public static void Years()
-    {
-        switch(majorNumber)
-        {
+
+    public static void Years() {
+        switch (majorNumber) {
             case '1':
                 fullMajor = fullMajor + "Freshman";
                 break;

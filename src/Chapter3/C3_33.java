@@ -7,15 +7,14 @@ import java.util.*;
  *
  * @author Kaleb Aslobrook
  */
-public class C3_33 
-{
+public class C3_33 {
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         //Starting Scanner and variables
         Scanner input = new Scanner(System.in);
         int weightOne;
@@ -38,16 +37,11 @@ public class C3_33
         pricePerWeightOne = (priceOne / weightOne);
         pricePerWeightTwo = (priceTwo / weightTwo);
         //Replying which is efficient
-        if(pricePerWeightOne < pricePerWeightTwo)
-        {
+        if (pricePerWeightOne < pricePerWeightTwo) {
             System.out.println("Package 1 has a better price");
-        }
-        else if (pricePerWeightTwo < pricePerWeightOne)
-        {
+        } else if (pricePerWeightTwo < pricePerWeightOne) {
             System.out.println("Package 2 has a better price");
-        }
-        else
-        {
+        } else {
             System.out.println("They are equal in price efficiency");
         }
     }

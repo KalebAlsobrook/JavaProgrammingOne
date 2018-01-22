@@ -7,28 +7,26 @@ import java.util.Scanner;
  *
  * @author kaleb alsobrook
  */
-public class P5 
-{
+public class P5 {
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         long yesVotes = 0;
         long noVotes = 0;
         char userInput;
         boolean keepVoting = true;
         Scanner scan = new Scanner(System.in);
-        
-        while(keepVoting == true)
-        {
+
+        while (keepVoting == true) {
             System.out.println("\nInsert vote: (Y or y for yes) (N or n for no) (Q or q to quit): ");
             userInput = scan.next().charAt(0);
-            
+
             userInput = Character.toUpperCase(userInput);
-            
+
             switch (userInput) {
                 case 'Y':
                     yesVotes += 1;
@@ -44,21 +42,16 @@ public class P5
                     break;
             }
         }
-        
+
         System.out.print("\n\nTOTAL VOTES");
-        System.out.print("\n   YES: "+ yesVotes);
-        System.out.print("\n   NO: "+ noVotes);
-        
-        if (yesVotes > noVotes)
-        {
+        System.out.print("\n   YES: " + yesVotes);
+        System.out.print("\n   NO: " + noVotes);
+
+        if (yesVotes > noVotes) {
             System.out.print("\n YES WINS");
-        }
-        else if (yesVotes < noVotes)
-        {
+        } else if (yesVotes < noVotes) {
             System.out.print("\n NO WINS");
-        }
-        else
-        {
+        } else {
             System.out.print("\n TIE");
         }
     }
