@@ -8,6 +8,11 @@ import java.util.*;
  */
 public class C7_1 {
 
+    /**
+     * Main Method
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.print("Enter the number of students:");
         Scanner input = new Scanner(System.in);

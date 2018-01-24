@@ -11,6 +11,11 @@ public class P7 {
 
     static Scanner scan = new Scanner(System.in);
 
+    /**
+     * Main Method
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         int average;
 
@@ -33,6 +38,12 @@ public class P7 {
         }
     }
 
+    /**
+     * Finds the Average of given array
+     *
+     * @param list array to be averaging
+     * @return returns the average of the given array
+     */
     public static int findAverage(int list[]) {
         int total = 0;
         for (int i = 0; i < list.length; i++) {
@@ -42,6 +53,11 @@ public class P7 {
         return total;
     }
 
+    /**
+     * Prints array
+     *
+     * @param list array to be printed
+     */
     public static void printArray(int list[]) {
         for (int i = 0; i < list.length; i++) {
             System.out.print(list[i] + " ");
