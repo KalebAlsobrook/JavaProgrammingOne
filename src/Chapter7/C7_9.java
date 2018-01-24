@@ -8,6 +8,11 @@ import java.util.*;
  */
 public class C7_9 {
 
+    /**
+     * Main Method
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -31,6 +36,12 @@ public class C7_9 {
 
     }//:)
 
+    /**
+     *
+     * @param list1 first array to compare
+     * @param list2 second array to compare
+     * @return true or false according to if arrays match
+     */
     public static boolean equals(int[] list1, int[] list2) //the method accepts 2 arrays
     {
         return java.util.Arrays.equals(list1, list2); //this method will return true or false if the arrays are equal or not

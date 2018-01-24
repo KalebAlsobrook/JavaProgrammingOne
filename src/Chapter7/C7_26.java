@@ -9,6 +9,11 @@ import java.util.*;
  */
 public class C7_26 {
 
+    /**
+     * Main Method
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -32,6 +37,13 @@ public class C7_26 {
 
     }
 
+    /**
+     * Method to determine if two arrays are identical
+     *
+     * @param list1 first array to compare
+     * @param list2 second array to compare
+     * @return returns if the two arrays are identical
+     */
     public static boolean equals(int[] list1, int[] list2) {
 
         if (list1.length != list2.length) {
