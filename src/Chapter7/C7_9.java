@@ -3,6 +3,7 @@ package Chapter7;
 import java.util.*;
 
 /**
+ * Class to determine if two arrays are identical
  *
  * @author kaleb Alsobrook
  */
