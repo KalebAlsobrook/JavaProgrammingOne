@@ -45,6 +45,10 @@ public class C4_23 {
         C4_23.DoMath();
     }
 
+    /**
+     * Method to detmine maths according to formulas
+     *
+     */
     public static void DoMath() {
         grossPay = (payRate * hoursWorked);
         federalHold = (federalHoldUsed * 100);
@@ -56,6 +60,10 @@ public class C4_23 {
         C4_23.CreateApplication();
     }
 
+    /**
+     * Takes Static variables to print the total information
+     *
+     */
     public static void CreateApplication() {
         System.out.println();
         System.out.println();

@@ -14,7 +14,7 @@ public class P7 {
     /**
      * Main Method
      *
-     * @param args
+     * @param args arguments from command line prompt
      */
     public static void main(String[] args) {
         int average;
