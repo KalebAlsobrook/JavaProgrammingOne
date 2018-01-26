@@ -4,14 +4,14 @@ import java.util.*;
 
 /**
  *
- * @author kalev Alsobrook
+ * @author kaleb Alsobrook
  */
 public class C7_9 {
 
     /**
      * Main Method
      *
-     * @param args
+     * @param args arguments from command line prompt
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -37,6 +37,7 @@ public class C7_9 {
     }//:)
 
     /**
+     * Method to determine if the methods match
      *
      * @param list1 first array to compare
      * @param list2 second array to compare

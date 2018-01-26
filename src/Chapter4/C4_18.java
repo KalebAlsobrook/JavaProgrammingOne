@@ -50,6 +50,10 @@ public class C4_18 {
         }
     }
 
+    /**
+     * Method to determine the Class Year
+     * 
+     */
     public static void Years() {
         switch (majorNumber) {
             case '1':

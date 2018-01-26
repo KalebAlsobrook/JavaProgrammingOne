@@ -4,14 +4,14 @@ import java.util.*;
 
 /**
  *
- * @author ka0961727
+ * @author kaleb alsobrook
  */
 public class C7_1 {
 
     /**
      * Main Method
      *
-     * @param args
+     * @param args arguments from command line prompt
      */
     public static void main(String[] args) {
         System.out.print("Enter the number of students:");
