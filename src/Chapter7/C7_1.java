@@ -3,6 +3,7 @@ package Chapter7;
 import java.util.*;
 
 /**
+ * Program to determine grades based off of inputs
  *
  * @author kaleb alsobrook
  */
