@@ -47,7 +47,7 @@ public class C4_23 {
 
     /**
      * Method to detmine maths according to formulas
-     * 
+     *
      */
     public static void DoMath() {
         grossPay = (payRate * hoursWorked);
@@ -59,9 +59,10 @@ public class C4_23 {
         netPay = (grossPay - totalCost);
         C4_23.CreateApplication();
     }
+
     /**
      * Takes Static variables to print the total information
-     * 
+     *
      */
     public static void CreateApplication() {
         System.out.println();
